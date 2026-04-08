@@ -1,21 +1,37 @@
 {
-  "name": "pinkpixel-vscode-candy-themes",
-  "displayName": "Pink Pixel VSCode Candy Themes",
+  "name": "pinkpixel-candy-themes",
+  "displayName": "Pink Pixel Candy Themes",
   "description": "Neon candy dark themes for VSCode by Pink Pixel.",
   "version": "1.1.0",
   "publisher": "pinkpixel",
-  "icon": "icon.png",
   "license": "Apache-2.0",
+    "author": {
+    "name": "Pink Pixel",
+    "email": "admin@pinkpixel.dev",
+    "url": "https://pinkpixel.dev"
+  },
+  "homepage": "https://github.com/pinkpixel-dev/vscode-candy-themes",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pinkpixel-dev/pinkpixel-vscode-candy-themes"
+    "url": "https://github.com/pinkpixel-dev/vscode-candy-themes"
   },
-  "homepage": "https://github.com/pinkpixel-dev/pinkpixel-vscode-candy-themes",
+
   "bugs": {
-    "url": "https://github.com/pinkpixel-dev/pinkpixel-vscode-candy-themes/issues"
+    "url": "https://github.com/pinkpixel-dev/vscode-candy-themes/issues",
+    "email": "admin@pinkpixel.dev"
   },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Themes"
+  ],
   "keywords": [
     "theme",
+    "themes",
+    "color theme",
+    "vscode theme",
+    "pink pixel",
     "dark theme",
     "neon",
     "candy",
@@ -27,12 +43,15 @@
     "high contrast",
     "accessibility"
   ],
-  "engines": {
-    "vscode": "^1.80.0"
+    "galleryBanner": {
+    "color": "#1a1020",
+    "theme": "dark"
   },
-  "categories": [
-    "Themes"
-  ],
+  "icon": "icon.png",
+  "scripts": {
+    "validate": "node ./scripts/check-themes.mjs",
+    "package": "npm run validate && npx @vscode/vsce package"
+  },
   "contributes": {
     "themes": [
       {
@@ -41,19 +60,14 @@
         "path": "./themes/candy-nebula-color-theme.json"
       },
       {
+        "label": "Pink Pixel Cloudwerx Lab",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cloudwerx-lab-color-theme.json"
+      },
+      {
         "label": "Pink Pixel Electric Sugarstorm",
         "uiTheme": "vs-dark",
         "path": "./themes/electric-sugarstorm-color-theme.json"
-      },
-      {
-        "label": "Pink Pixel Neon Lagoon",
-        "uiTheme": "vs-dark",
-        "path": "./themes/neon-lagoon-color-theme.json"
-      },
-      {
-        "label": "Pink Pixel Voltage Velvet",
-        "uiTheme": "vs-dark",
-        "path": "./themes/voltage-velvet-color-theme.json"
       },
       {
         "label": "Pink Pixel Hyper Noir Contrast",
@@ -61,14 +75,19 @@
         "path": "./themes/hyper-noir-contrast-color-theme.json"
       },
       {
+        "label": "Pink Pixel Neon Lagoon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/neon-lagoon-color-theme.json"
+      },
+      {
         "label": "Pink Pixel Photon Storm Contrast",
         "uiTheme": "vs-dark",
         "path": "./themes/photon-storm-contrast-color-theme.json"
       },
       {
-        "label": "Pink Pixel Cloudwerx Lab",
+        "label": "Pink Pixel Voltage Velvet",
         "uiTheme": "vs-dark",
-        "path": "./themes/cloudwerx-lab-color-theme.json"
+        "path": "./themes/voltage-velvet-color-theme.json"
       }
     ]
   }
