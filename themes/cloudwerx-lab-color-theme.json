@@ -8,7 +8,7 @@
     "editorCursor.foreground": "#8ed8ff",
     "editor.lineHighlightBackground": "#17212d",
     "editor.selectionBackground": "#1f3b52",
-    "editor.inactiveSelectionBackground": "#162838",
+    "editor.inactiveSelectionBackground": "#16283822",
     "editorWhitespace.foreground": "#273645",
     "editorLineNumber.foreground": "#58738a",
     "editorLineNumber.activeForeground": "#cfefff",
@@ -105,12 +105,7 @@
     "dropdown.border": "#8ed8ff80",
 
     "chat.requestBackground": "#182330",
-    "chat.responseBackground": "#10161d",
     "chat.slashCommandBackground": "#234059",
-    "chat.commandInputBackground": "#0f141a",
-    "chat.commandInputBorder": "#8ed8ff80",
-    "chatAvatar.userBackground": "#8ed8ff",
-    "chatAvatar.userForeground": "#041018",
 
     "peekView.border": "#8ed8ff",
     "peekViewEditor.background": "#0f141a",
