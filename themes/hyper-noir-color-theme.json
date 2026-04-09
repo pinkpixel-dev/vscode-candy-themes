@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Pink Pixel Hyper Noir Contrast",
+  "name": "Pink Pixel Hyper Noir",
   "type": "dark",
   "colors": {
     "editor.background": "#000000",

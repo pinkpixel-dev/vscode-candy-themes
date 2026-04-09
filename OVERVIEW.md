@@ -20,9 +20,9 @@ With version `1.1.1`, the repo also standardizes local preview and packaging wor
 - Pink Pixel Candy Nebula
 - Pink Pixel Cloudwerx Lab
 - Pink Pixel Electric Sugarstorm
-- Pink Pixel Hyper Noir Contrast
+- Pink Pixel Hyper Noir
 - Pink Pixel Neon Lagoon
-- Pink Pixel Photon Storm Contrast
+- Pink Pixel Photon Storm
 - Pink Pixel Voltage Velvet
 
 ## Current design notes
@@ -33,7 +33,7 @@ Cloudwerx Lab gives the collection a calmer counterweight with charcoal workbenc
 
 Electric Sugarstorm and Voltage Velvet carry the loudest candy-rave energy, using hot magenta, lime, and cyan accents to keep syntax and interface framing sharp even on very dark editor surfaces.
 
-Hyper Noir Contrast and Photon Storm Contrast are still contributed as `vs-dark` themes rather than separate high-contrast entries, matching the pattern used in the newer Sweet Themes pack so they appear in the standard dark-theme picker list while still delivering accessibility-oriented contrast.
+Hyper Noir and Photon Storm are still contributed as `vs-dark` themes rather than separate high-contrast entries, matching the pattern used in the newer Sweet Themes pack so they appear in the standard dark-theme picker list while still delivering accessibility-oriented contrast.
 
 ## Local preview workflow
 

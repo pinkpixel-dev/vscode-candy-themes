@@ -1,5 +1,5 @@
 {
-  "name": "pinkpixel-candy-themes",
+  "name": "pinkpixel-vscode-candy-themes",
   "displayName": "Pink Pixel Candy Themes",
   "description": "Neon candy dark themes and contrast-heavy editor looks for Visual Studio Code by Pink Pixel.",
   "version": "1.1.1",
@@ -54,11 +54,6 @@
   "contributes": {
     "themes": [
       {
-        "label": "Pink Pixel Stardust Rush",
-        "uiTheme": "vs-dark",
-        "path": "./themes/stardust-rush-color-theme.json"
-      },
-      {
         "label": "Pink Pixel Candy Nebula",
         "uiTheme": "vs-dark",
         "path": "./themes/candy-nebula-color-theme.json"
@@ -74,9 +69,9 @@
         "path": "./themes/electric-sugarstorm-color-theme.json"
       },
       {
-        "label": "Pink Pixel Hyper Noir Contrast",
+        "label": "Pink Pixel Hyper Noir",
         "uiTheme": "vs-dark",
-        "path": "./themes/hyper-noir-contrast-color-theme.json"
+        "path": "./themes/hyper-noir-color-theme.json"
       },
       {
         "label": "Pink Pixel Neon Lagoon",
@@ -84,9 +79,14 @@
         "path": "./themes/neon-lagoon-color-theme.json"
       },
       {
-        "label": "Pink Pixel Photon Storm Contrast",
+        "label": "Pink Pixel Photon Storm",
         "uiTheme": "vs-dark",
-        "path": "./themes/photon-storm-contrast-color-theme.json"
+        "path": "./themes/photon-storm-color-theme.json"
+      },
+      {
+        "label": "Pink Pixel Stardust Rush",
+        "uiTheme": "vs-dark",
+        "path": "./themes/stardust-rush-color-theme.json"
       },
       {
         "label": "Pink Pixel Voltage Velvet",

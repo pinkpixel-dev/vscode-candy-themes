@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Pink Pixel Photon Storm Contrast",
+  "name": "Pink Pixel Photon Storm",
   "type": "dark",
   "colors": {
     "editor.background": "#01080d",
