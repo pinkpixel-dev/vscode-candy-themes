@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.2 - 2026-04-09 12:39 EST
+
+- Updated screenshots and added to README.md
+- Added new `Stardust Rush` theme.
+
 ## 1.1.1 - 2026-04-08 17:24 EDT
 
 - Refreshed the repository scaffold so `README.md`, `OVERVIEW.md`, and the new `ROADMAP.md` now match the newer Pink Pixel Sweet Themes layout and tone.
