@@ -1,11 +1,11 @@
 {
   "name": "pinkpixel-candy-themes",
   "displayName": "Pink Pixel Candy Themes",
-  "description": "Neon candy dark themes for VSCode by Pink Pixel.",
-  "version": "1.1.0",
+  "description": "Neon candy dark themes and contrast-heavy editor looks for Visual Studio Code by Pink Pixel.",
+  "version": "1.1.1",
   "publisher": "pinkpixel",
   "license": "Apache-2.0",
-    "author": {
+  "author": {
     "name": "Pink Pixel",
     "email": "admin@pinkpixel.dev",
     "url": "https://pinkpixel.dev"
@@ -13,9 +13,8 @@
   "homepage": "https://github.com/pinkpixel-dev/vscode-candy-themes",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pinkpixel-dev/vscode-candy-themes"
+    "url": "https://github.com/pinkpixel-dev/vscode-candy-themes.git"
   },
-
   "bugs": {
     "url": "https://github.com/pinkpixel-dev/vscode-candy-themes/issues",
     "email": "admin@pinkpixel.dev"
@@ -43,7 +42,7 @@
     "high contrast",
     "accessibility"
   ],
-    "galleryBanner": {
+  "galleryBanner": {
     "color": "#1a1020",
     "theme": "dark"
   },
@@ -54,6 +53,11 @@
   },
   "contributes": {
     "themes": [
+      {
+        "label": "Pink Pixel Stardust Rush",
+        "uiTheme": "vs-dark",
+        "path": "./themes/stardust-rush-color-theme.json"
+      },
       {
         "label": "Pink Pixel Candy Nebula",
         "uiTheme": "vs-dark",

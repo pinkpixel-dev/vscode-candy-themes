@@ -1,6 +1,5 @@
 # VSCode Extension
 *.vsix
-.vscode/
 .vscode-test/
 
 # Node modules (if you add any tooling later)

@@ -1,276 +1,48 @@
-# 📋 Pink Pixel VSCode Candy Themes - Project Overview
+# Overview
 
-**Date:** November 18, 2025  
-**Version:** 1.1.0  
-**Status:** ✅ Production Ready
+## Purpose
 
----
+This repository packages Pink Pixel's original candy-forward Visual Studio Code theme collection as a theme-only extension. The extension contributes seven dark themes, including two contrast-heavy variants, and keeps the source of truth in plain JSON files under `themes/`. This refresh aligns the repository scaffold with the newer `vscode-sweet-themes` project so both collections now share the same documentation layout, packaging workflow, and Marketplace-facing structure.
 
-## 🎯 Project Purpose
+With version `1.1.1`, the repo also standardizes local preview and packaging work: `README.md` now follows the same compact Marketplace-first format as the Sweet Themes collection, `ROADMAP.md` has been added for ongoing follow-up work, and the extension can be packaged consistently with `npm run package`.
 
-**Pink Pixel VSCode Candy Themes** is a collection of vibrant, neon-inspired dark themes for Visual Studio Code. The extension now provides 7 distinct color schemes that blend candy-bright accents with deep, comfortable dark backgrounds. Each theme is meticulously crafted to reduce eye strain during long coding sessions while maintaining visual excitement and personality.
+## Architecture
 
-This project aligns with the Pink Pixel brand aesthetic - modern, playful, and unapologetically colorful - offering themes that transform the coding environment into an immersive, visually stunning experience.
+- `package.json` is the VS Code extension manifest and declares all contributed themes.
+- `.vscode/launch.json` adds a ready-to-run Extension Development Host profile for local previewing.
+- `themes/*.json` stores each color theme definition.
+- `scripts/check-themes.mjs` performs lightweight validation so theme packaging errors are caught before creating a `.vsix`.
+- `.vscodeignore` keeps dev-only files out of the packaged extension, including local Codex instructions, the checked-in launch profile, archived source folders under `other/`, and README-only marketing assets such as `logo.png` and `screenshots/**`.
+- `icon.png` is registered in `package.json` as the Marketplace extension icon.
 
----
+## Theme inventory
 
-## 🏗️ Architecture
+- Pink Pixel Candy Nebula
+- Pink Pixel Cloudwerx Lab
+- Pink Pixel Electric Sugarstorm
+- Pink Pixel Hyper Noir Contrast
+- Pink Pixel Neon Lagoon
+- Pink Pixel Photon Storm Contrast
+- Pink Pixel Voltage Velvet
 
-### **Extension Type**
-Pure Visual Studio Code theme extension (no runtime code)
+## Current design notes
 
-### **Structure**
-```
-pinkpixel-vscode-candy-themes/
-├── .vscode/
-│   └── launch.json           # Debug configuration for extension development
-├── themes/
-│   ├── candy-nebula-color-theme.json
-│   ├── electric-sugarstorm-color-theme.json
-│   ├── neon-lagoon-color-theme.json
-│   ├── voltage-velvet-color-theme.json
-│   ├── hyper-noir-contrast-color-theme.json
-│   ├── photon-storm-contrast-color-theme.json
-│   └── cloudwerx-lab-color-theme.json
-├── package.json              # Extension manifest
-└── [documentation files]
-```
+Candy Nebula remains the softest entry point in the pack, leaning into a dreamy magenta-purple backdrop with mint and sky highlights for a cosmic candy feel.
 
-### **Theme Schema**
-All themes follow the VSCode Color Theme schema (`vscode://schemas/color-theme`) and include:
+Cloudwerx Lab gives the collection a calmer counterweight with charcoal workbench chrome and powder-blue UI accents that feel cleaner and more restrained than the neon-forward themes.
 
-**UI Color Definitions:**
-- Editor (background, foreground, cursor, selection, line highlighting, whitespace, line numbers)
-- Activity Bar (background, foreground, badges, borders, active border)
-- Side Bar (background, foreground, section headers, borders, titles)
-- Tabs (active/inactive backgrounds, foregrounds, borders)
-- Title Bar (active/inactive backgrounds, foregrounds, borders)
-- Status Bar (background, foreground, debugging states, borders)
-- Terminal (background, foreground, cursor, full ANSI color palette with bright variants)
-- Panels (background, borders, title states)
-- Lists & Trees (selection, hover, focus, drop, indent guides)
-- Menus (background, foreground, selection, menubar)
-- Inputs & Dropdowns (background, foreground, borders, placeholders)
-- Chat Interface (request/response backgrounds, slash commands, avatars)
-- Peek Views (borders, editor, results backgrounds)
-- Badges, Buttons, Focus Borders, Selection
+Electric Sugarstorm and Voltage Velvet carry the loudest candy-rave energy, using hot magenta, lime, and cyan accents to keep syntax and interface framing sharp even on very dark editor surfaces.
 
-**Token Colors (Syntax Highlighting):**
-- Comments (italic, muted colors)
-- Keywords & Storage (bright accent colors)
-- Strings & Symbols (vibrant greens or complementary colors)
-- Variables (foreground color)
-- Functions (cyan/blue tones)
-- Types & Classes (yellow/gold tones)
-- Constants & Numbers (pink/red tones)
-- Punctuation & Delimiters (foreground color)
-- Markdown-specific styles (headings, bold, italic, quotes, code blocks, lists)
+Hyper Noir Contrast and Photon Storm Contrast are still contributed as `vs-dark` themes rather than separate high-contrast entries, matching the pattern used in the newer Sweet Themes pack so they appear in the standard dark-theme picker list while still delivering accessibility-oriented contrast.
 
----
+## Local preview workflow
 
-## 🎨 Theme Descriptions
+Pressing `F5` uses the checked-in extension host launch profile, so the repo can be previewed directly in VS Code without packaging a `.vsix` first.
 
-### **1. Candy Nebula** 🍬🌌
-**Palette:** Deep purple/magenta background with candy pink, mint green, sky blue, and soft yellow accents
-- **Editor Background:** `#0b0213` (very dark purple)
-- **Cursor:** `#ff4ecb` (hot pink)
-- **Primary Accent:** Pink/Magenta
-- **Vibe:** Dreamy, cosmic, candy-coated galaxy aesthetic
+For packaging work, `npm run validate` checks every contributed theme file against the manifest, and `npm run package` runs that validation step before invoking `npx @vscode/vsce package`.
 
-### **2. Electric Sugarstorm** ⚡🍭
-**Palette:** Dark charcoal blue-grey with electric magenta, neon green, bright yellow, and cyan accents
-- **Editor Background:** `#0a0d10` (near-black blue-grey)
-- **Cursor:** `#ff00d4` (vivid magenta)
-- **Primary Accent:** Magenta/Cyan
-- **Vibe:** High-energy, electric, sugar rush intensity
+## Note on the old demo `tsconfig.json`
 
-### **3. Neon Lagoon** 🌊✨
-**Palette:** Deep teal/cyan background with aqua, lime green, coral pink, and golden yellow accents
-- **Editor Background:** `#04121a` (dark blue-teal)
-- **Cursor:** `#28ffe0` (bright cyan)
-- **Primary Accent:** Cyan/Aqua
-- **Vibe:** Tropical, refreshing, underwater neon oasis
+There is no active root-level `tsconfig.json` or `jsconfig.json` in this repository anymore. The lingering "demo" references come from archived source folders kept under `other/`, including an old `other/horizon-extended-master/demo` subtree and nested `.vscode` folders from older theme repos. Those folders are now explicitly excluded from the packaged extension via `.vscodeignore`, so they will not ship in the `.vsix`.
 
-### **4. Voltage Velvet** ⚡💜
-**Palette:** Rich purple/violet background with lime green, cyan, pink, and golden yellow accents
-- **Editor Background:** `#140117` (deep violet)
-- **Cursor:** `#9bff2d` (lime green)
-- **Primary Accent:** Lime Green/Cyan
-- **Vibe:** Luxurious, electric, retro-futuristic
-
-### **5. Hyper Noir Contrast** 🖤💫
-**Palette:** Pure black background with cyan, neon green, hot pink, and bright yellow for maximum contrast
-- **Editor Background:** `#000000` (true black)
-- **Cursor:** `#00f0ff` (bright cyan)
-- **Primary Accent:** Cyan/Red
-- **Vibe:** High contrast, accessibility-focused, dramatic cyberpunk aesthetic
-
-### **6. Photon Storm Contrast** 🌟⚡
-**Palette:** Very dark blue-green background with lime green, cyan, pink, and golden yellow for high contrast
-- **Editor Background:** `#01080d` (almost black blue-green)
-- **Cursor:** `#9dff00` (electric lime)
-- **Primary Accent:** Lime/Cyan
-- **Vibe:** Bio-luminescent, sci-fi, Matrix-inspired energy
-
-### **7. Cloudwerx Lab** ☁️🧪
-**Palette:** Charcoal graphite workspace contrasted with baby blues, powder highlights, and crisp whites
-- **Editor Background:** `#0f141a` (charcoal gray)
-- **Cursor:** `#8ed8ff` (powder blue)
-- **Primary Accent:** Powder/Ice Blue
-- **Vibe:** Serene, modern, cloud-lab minimalism
-
----
-
-## 🔧 Technical Details
-
-### **Requirements**
-- **VS Code Version:** `^1.80.0` or higher
-- **Engine:** vscode
-- **Extension Type:** Theme
-- **Category:** Themes
-
-### **Package Configuration**
-```json
-{
-  "name": "pinkpixel-vscode-candy-themes",
-  "displayName": "Pink Pixel VSCode Candy Themes",
-  "description": "Neon candy dark themes for VSCode by Pink Pixel.",
-  "version": "1.1.0",
-  "publisher": "pinkpixel",
-  "engines": {
-    "vscode": "^1.80.0"
-  },
-  "categories": ["Themes"]
-}
-```
-
-### **Theme Contribution**
-All 7 themes are registered in `package.json` under `contributes.themes` with:
-- **Label:** User-facing theme name
-- **uiTheme:** `vs-dark` (all themes are dark variants)
-- **Path:** Relative path to theme JSON file
-
-### **No Build Process Required**
-This is a pure theme extension with no TypeScript/JavaScript code, no dependencies, and no compilation step. The themes are ready to use directly from the JSON files.
-
----
-
-## 📁 File Structure
-
-### **Core Files**
-
-#### `package.json`
-Extension manifest containing metadata, VS Code version requirements, publisher info, and theme contributions.
-
-#### `themes/*.json`
-Seven individual theme files, each containing comprehensive UI color definitions and token color mappings following the VSCode Color Theme schema.
-
-#### `.vscode/launch.json`
-Debug configuration for testing the extension in the Extension Development Host.
-
-### **Documentation Files**
-- `OVERVIEW.md` - This file (internal project analysis)
-- `README.md` - User-facing documentation with installation and theme previews
-- `CHANGELOG.md` - Version history and release notes
-- `LICENSE` - Apache 2.0 license
-- `CONTRIBUTING.md` - Contribution guidelines
-
----
-
-## 🎯 Key Features
-
-✅ **7 Distinct Themes** - Comprehensive variety from cosmic purple to serene cloud labs  
-✅ **Complete UI Coverage** - Every VS Code interface element is themed, including AI chat interfaces  
-✅ **Full Terminal Support** - Custom ANSI color palettes (16 colors each) for immersive terminal experiences  
-✅ **Markdown Optimized** - Special styling for headings, bold, italic, quotes, and code blocks  
-✅ **Accessibility Options** - High contrast variants (Hyper Noir, Photon Storm) for visibility  
-✅ **Peek View Support** - Custom colors for inline code navigation  
-✅ **Debug Mode Styling** - Distinct status bar colors when debugging  
-✅ **Modern UI Elements** - Includes styling for latest VS Code features like chat interfaces  
-
----
-
-## 🚀 Development Workflow
-
-### **Testing Themes**
-1. Open the project folder in VS Code
-2. Press `F5` to launch Extension Development Host
-3. Open Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
-4. Type "Preferences: Color Theme" and select a PinkPixel theme
-5. Test across different file types and UI states
-
-### **Modifying Themes**
-1. Edit theme JSON files in `themes/` directory
-2. Use VSCode's Color Theme schema for IntelliSense
-3. Reload Extension Development Host (`Ctrl+R` / `Cmd+R`) to see changes
-4. Validate all UI elements are styled appropriately
-
-### **Publishing**
-```bash
-# Install vsce (Visual Studio Code Extension Manager)
-npm install -g @vscode/vsce
-
-# Package extension
-vsce package
-
-# Publish to VS Code Marketplace
-vsce publish
-```
-
----
-
-## 🎨 Design Philosophy
-
-### **Core Principles**
-1. **Vibrant but Comfortable** - Bright accent colors on dark, easy-on-the-eyes backgrounds
-2. **Semantic Color Usage** - Consistent color meanings across themes (functions=blue, strings=green, etc.)
-3. **Terminal Harmony** - ANSI colors match the theme's aesthetic, not just default terminal colors
-4. **Complete Coverage** - No default colors leaked through; every element is intentionally styled
-5. **Brand Alignment** - Reflects Pink Pixel's playful, modern, neon-candy aesthetic
-
-### **Accessibility Considerations**
-- High contrast variants available (Hyper Noir Contrast, Photon Storm Contrast)
-- Cursor colors highly visible against all backgrounds
-- Active line highlighting for easier focus tracking
-- Clear distinction between active and inactive UI elements
-
----
-
-## 🔮 Future Enhancements
-
-### **Potential Additions**
-- Light theme variants (Candy Nebula Light, Electric Sugarstorm Light, etc.)
-- Additional contrast/saturation variants
-- Icon theme companion pack
-- VS Code extension settings for customizable accent colors
-- Theme generator tool for creating custom variants
-
-### **Community Features**
-- Theme preview page with live screenshots
-- User-submitted theme variants
-- Integration with Pink Pixel OS for synchronized theming
-
----
-
-## 📦 Dependencies
-
-**Runtime:** None (pure theme extension)  
-**Development:** VS Code ^1.80.0 for Extension Development Host
-
----
-
-## 🏷️ Tags & Keywords
-
-`vscode-theme` `dark-theme` `neon` `candy` `cyberpunk` `synthwave` `high-contrast` `accessibility` `pink-pixel` `colorful` `modern` `developer-tools`
-
----
-
-## 📞 Author & Brand
-
-**Author:** Pink Pixel  
-**Website:** [pinkpixel.dev](https://pinkpixel.dev)  
-**GitHub:** [github.com/pinkpixel-dev](https://github.com/pinkpixel-dev)  
-**Email:** admin@pinkpixel.dev  
-**Tagline:** "Dream it, Pixel it"  
-
-**Made with ❤️ by Pink Pixel** ✨
+If VS Code still surfaces that old demo path during editing, it is likely discovering files from those archived folders inside the workspace rather than from the actual extension scaffold. Moving the archived folders out of the workspace or deleting them later would be the cleanest way to silence that noise entirely.

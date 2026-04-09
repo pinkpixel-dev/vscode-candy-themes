@@ -23,28 +23,29 @@
     "sideBar.background": "#03161d",
     "sideBar.foreground": "#dcf9ff",
     "sideBarSectionHeader.background": "#072029",
-    "sideBarSectionHeader.foreground": "#dcf9ff",
-    "sideBarSectionHeader.border": "#09313f",
+    "sideBarSectionHeader.foreground": "#f7ff5a",
+    "sideBarSectionHeader.border": "#28ffe066",
     "sideBar.border": "#09313f",
-    "sideBarTitle.foreground": "#dcf9ff",
+    "sideBarTitle.foreground": "#a4ff5f",
 
     "tab.activeBackground": "#072029",
     "tab.inactiveBackground": "#030f13",
     "tab.border": "#09313f",
-    "tab.activeForeground": "#dcf9ff",
+    "tab.activeBorder": "#28ffe0",
+    "tab.activeForeground": "#f7ff5a",
     "tab.inactiveForeground": "#7abec9",
 
     "titleBar.activeBackground": "#03161d",
     "titleBar.activeForeground": "#dcf9ff",
     "titleBar.inactiveBackground": "#03161d",
     "titleBar.inactiveForeground": "#9ed2dc",
-    "titleBar.border": "#09313f",
+    "titleBar.border": "#28ffe066",
 
     "statusBar.background": "#03161d",
     "statusBar.foreground": "#dcf9ff",
     "statusBar.debuggingBackground": "#ff59c7",
     "statusBar.debuggingForeground": "#04121a",
-    "statusBar.border": "#09313f",
+    "statusBar.border": "#28ffe066",
 
     "terminal.background": "#03121a",
     "terminal.foreground": "#dcf9ff",
@@ -53,7 +54,7 @@
     "terminal.ansiBlack": "#03121a",
     "terminal.ansiRed": "#ff6b7a",
     "terminal.ansiGreen": "#a4ff5f",
-    "terminal.ansiYellow": "#ffdb5a",
+    "terminal.ansiYellow": "#f7ff5a",
     "terminal.ansiBlue": "#46c5ff",
     "terminal.ansiMagenta": "#ff59c7",
     "terminal.ansiCyan": "#28ffe0",
@@ -61,7 +62,7 @@
     "terminal.ansiBrightBlack": "#0b2331",
     "terminal.ansiBrightRed": "#ff8ba1",
     "terminal.ansiBrightGreen": "#c8ff92",
-    "terminal.ansiBrightYellow": "#ffe88f",
+    "terminal.ansiBrightYellow": "#f9ff8b",
     "terminal.ansiBrightBlue": "#7bd4ff",
     "terminal.ansiBrightMagenta": "#ff8ada",
     "terminal.ansiBrightCyan": "#73fffa",
@@ -80,16 +81,16 @@
     "editorGroup.border": "#09313f",
 
     "panel.background": "#041b24",
-    "panel.border": "#09313f",
-    "panelTitle.activeForeground": "#dcf9ff",
+    "panel.border": "#28ffe066",
+    "panelTitle.activeForeground": "#f7ff5a",
     "panelTitle.inactiveForeground": "#7abec9",
 
-    "list.activeSelectionBackground": "#0d3544",
+    "list.activeSelectionBackground": "#28ffe066",
     "list.activeSelectionForeground": "#dcf9ff",
     "list.inactiveSelectionBackground": "#08242f",
-    "list.hoverBackground": "#0a2c38",
-    "list.focusBackground": "#144457",
-    "list.dropBackground": "#28ffe044",
+    "list.hoverBackground": "#123544",
+    "list.focusBackground": "#28ffe066",
+    "list.dropBackground": "#12354466",
     "tree.indentGuidesStroke": "#295260",
 
     "menu.background": "#041b24",
@@ -167,7 +168,7 @@
         "storage.type.class"
       ],
       "settings": {
-        "foreground": "#ffdb5a"
+        "foreground": "#f7ff5a"
       }
     },
     {
@@ -176,7 +177,7 @@
         "constant.language"
       ],
       "settings": {
-        "foreground": "#ff9a5a"
+        "foreground": "#a448d9"
       }
     },
     {
@@ -206,7 +207,7 @@
         "markup.bold.markdown"
       ],
       "settings": {
-        "foreground": "#ffdb5a",
+        "foreground": "#f7ff5a",
         "fontStyle": "bold"
       }
     },

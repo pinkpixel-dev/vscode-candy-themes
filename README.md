@@ -1,237 +1,85 @@
-# ✨ Pink Pixel VSCode Candy Themes
+# Pink Pixel Candy Themes
 
-<div align="center">
+<p align="center">
+  <img src="logo.png" alt="Pink Pixel Candy Themes logo" width="220">
+</p>
 
-<img src="logo.png" alt="Pink Pixel Logo" width="350" />
+<p align="center">
+  Dream it, Pixel it.
+</p>
 
-![Version](https://img.shields.io/badge/version-1.1.0-ff4ecb?style=for-the-badge)
-![VS Code](https://img.shields.io/badge/VS%20Code-%5E1.80.0-00f0ff?style=for-the-badge)
-![License](https://img.shields.io/badge/license-Apache%202.0-9bff2d?style=for-the-badge)
+Neon candy dark themes and contrast-heavy editor looks for Visual Studio Code, designed by Pink Pixel. `Pink Pixel Candy Themes` bundles 7 polished themes that range from dreamy magenta atmospheres to stark high-contrast neon workbenches.
 
-**Dream it, Pixel it** 🌈
+## Included Themes
 
-A collection of 7 vibrant, neon-inspired dark themes that transform your coding experience into a candy-coated adventure through cyberspace.
+- Pink Pixel Candy Nebula
+- Pink Pixel Cloudwerx Lab
+- Pink Pixel Electric Sugarstorm
+- Pink Pixel Hyper Noir Contrast
+- Pink Pixel Neon Lagoon
+- Pink Pixel Photon Storm Contrast
+- Pink Pixel Stardust Rush
+- Pink Pixel Voltage Velvet
 
-[Install](#-installation) • [Themes](#-themes) • [Features](#-features) • [Contributing](#-contributing)
+## Screenshots
 
-</div>
+### Pink Pixel Candy Nebula
 
----
+![Pink Pixel Candy Nebula](screenshots/candy_nebula.png)
 
-## 🎨 Themes
+### Pink Pixel Cloudwerx Lab
 
-### 🍬 **Candy Nebula**
-Drift through a cosmic wonderland of purple stardust and candy-pink nebulas. Perfect for dreamers who code with their heart.
+![Pink Pixel Cloudwerx Lab](screenshots/cloudwerx_lab.png)
 
-**Vibes:** Dreamy • Cosmic • Sweet  
-**Primary Colors:** Deep Purple • Hot Pink • Mint Green • Sky Blue
+### Pink Pixel Electric Sugarstorm
 
----
+![Pink Pixel Electric Sugarstorm](screenshots/electric_sandstorm.png)
 
-### ⚡ **Electric Sugarstorm**
-A high-voltage rush of electric magenta and neon green that'll supercharge your coding sessions. For developers who run on pure energy.
+### Pink Pixel Hyper Noir Contrast
 
-**Vibes:** Intense • Electric • Dynamic  
-**Primary Colors:** Charcoal Grey • Vivid Magenta • Neon Green • Bright Yellow
+![Pink Pixel Hyper Noir Contrast](screenshots/hyper_noir.png)
 
----
+### Pink Pixel Neon Lagoon
 
-### 🌊 **Neon Lagoon**
-Dive into a tropical paradise where cyan waters meet lime shores. Refreshing and energizing like a digital vacation.
+![Pink Pixel Neon Lagoon](screenshots/neon_lagoon.png)
 
-**Vibes:** Tropical • Refreshing • Aquatic  
-**Primary Colors:** Deep Teal • Bright Cyan • Lime Green • Coral Pink
+### Pink Pixel Photon Storm Contrast
 
----
+![Pink Pixel Photon Storm Contrast](screenshots/photon_storm.png)
 
-### ☁️ **Cloudwerx Lab**
-Charcoal lab consoles accented with baby blues and soft whites inspired by the Cloudwerx desktop vibe. Calm, focused, and airy.
+### Pink Pixel Stardust Rush
 
-**Vibes:** Serene • Modern • Airy  
-**Primary Colors:** Charcoal Gray • Powder Blue • Ice Blue • Soft White
+![Pink Pixel Stardust Rush](screenshots/stardust_rush.png)
 
----
+### Pink Pixel Voltage Velvet
 
-### ⚡ **Voltage Velvet**
-Luxurious purple depths electrified with lime green lightning. The perfect fusion of elegance and raw power.
+![Pink Pixel Voltage Velvet](screenshots/voltage_velvet.png)
 
-**Vibes:** Luxurious • Electric • Retro-Futuristic  
-**Primary Colors:** Rich Violet • Lime Green • Cyan • Golden Yellow
+## Use The Themes
 
----
+Open the Command Palette, run `Preferences: Color Theme`, and choose any `Pink Pixel` candy theme from the list.
 
-### 🖤 **Hyper Noir Contrast**
-Pure black canvas illuminated by brilliant neon strokes. Maximum contrast for ultimate focus and accessibility.
+## Development
 
-**Vibes:** Dramatic • Cyberpunk • High Contrast  
-**Primary Colors:** True Black • Bright Cyan • Neon Green • Hot Pink
+- Run `npm run validate` to confirm every contributed theme file matches the manifest.
+- Run `npm run package` to build a `.vsix` package with `@vscode/vsce`.
+- Press `F5` in VS Code to launch an Extension Development Host for local previewing.
 
----
+## About Pink Pixel
 
-### 🌟 **Photon Storm Contrast**
-Bio-luminescent energy crackling through the darkness. High contrast with a sci-fi edge.
+- Website: https://pinkpixel.dev
+- GitHub: https://github.com/pinkpixel-dev
+- Contact: admin@pinkpixel.dev
+- Support: support@pinkpixel.dev
+- Discord: @sizzlebopz
+- Funding: https://www.buymeacoffee.com/pinkpixel
+- Funding: https://ko-fi.com/sizzlebop
 
-**Vibes:** Sci-Fi • Bio-Luminescent • Matrix-Inspired  
-**Primary Colors:** Dark Blue-Green • Electric Lime • Cyan • Magenta
-
----
-
-## 📦 Installation
-
-### **From VS Code Marketplace** (Coming Soon)
-1. Open VS Code
-2. Go to **Extensions** (`Ctrl+Shift+X` / `Cmd+Shift+X`)
-3. Search for **"Pink Pixel VSCode Candy Themes"**
-4. Click **Install**
-5. Open Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
-6. Select **"Preferences: Color Theme"**
-7. Choose your favorite Pink Pixel theme. ✨💖
-
-### **Manual Installation** (For Development/Testing)
-1. Clone or download this repository
-2. Copy the `pinkpixel-vscode-candy-themes` folder to your VS Code extensions directory:
-   - **Windows:** `%USERPROFILE%\.vscode\extensions\`
-   - **macOS:** `~/.vscode/extensions/`
-   - **Linux:** `~/.vscode/extensions/`
-3. Reload VS Code
-4. Select your theme via Command Palette → **"Preferences: Color Theme"**
+Made with 💖 by Pink Pixel.
 
 ---
 
-## ✨ Features
+Looking for more Pink Pixel themes? Check out the `Pink Pixel Sweet Themes` collection by searching extensions in VS Code, or visit:
 
-### 🎯 **Complete Coverage**
-Every single VS Code interface element is meticulously themed - from the editor to the terminal, from peek views to AI chat interfaces. No detail left unstyled!
-
-### 🖥️ **Terminal Paradise**
-Custom ANSI color palettes (16 colors each) that match each theme's aesthetic. Your terminal will be as beautiful as your code.
-
-### 📝 **Markdown Optimized**
-Special styling for markdown files with distinct colors for headings, bold, italic, quotes, and code blocks. Perfect for documentation lovers.
-
-### ♿ **Accessibility First**
-High contrast variants (**Hyper Noir Contrast** & **Photon Storm Contrast**) ensure everyone can code comfortably.
-
-### 🎭 **Semantic Syntax**
-Consistent color meanings across all themes:
-- 🔵 **Functions** - Cyan/Blue tones
-- 🟢 **Strings** - Green/Lime tones
-- 🟡 **Types** - Yellow/Gold tones
-- 🔴 **Numbers** - Pink/Red tones
-- 💜 **Keywords** - Purple/Magenta tones
-
-### 🐛 **Debug Mode**
-Distinct status bar styling when debugging - you'll always know what mode you're in.
-
----
-
-## 🖼️ Screenshots
-
-### 🍬 Candy Nebula
-<img src="screenshots/candy_nebula.png" alt="Candy Nebula Theme" width="700" />
-
----
-
-### ⚡ Electric Sugarstorm
-<img src="screenshots/electric_sandstorm.png" alt="Electric Sugarstorm Theme" width="700" />
-
----
-
-### 🌊 Neon Lagoon
-<img src="screenshots/neon_lagoon.png" alt="Neon Lagoon Theme" width="700" />
-
----
-
-### ☁️ Cloudwerx Lab
-<img src="screenshots/cloudwerx_lab.png" alt="Cloudwerx Lab Theme" width="700" />
-
----
-
-### ⚡ Voltage Velvet
-<img src="screenshots/voltage_velvet.png" alt="Voltage Velvet Theme" width="700" />
-
----
-
-### 🖤 Hyper Noir Contrast
-<img src="screenshots/hyper_noir.png" alt="Hyper Noir Contrast Theme" width="700" />
-
----
-
-### 🌟 Photon Storm Contrast
-<img src="screenshots/photon_storm.png" alt="Photon Storm Contrast Theme" width="700" />
-
----
-
-## 🎮 Theme Selector Cheat Sheet
-
-**Need help choosing?** Here's our quick guide:
-
-| **If you like...** | **Try this theme** |
-|--------------------|--------------------|
-| Cosmic vibes, dreamy aesthetics | 🍬 **Candy Nebula** |
-| High energy, maximum intensity | ⚡ **Electric Sugarstorm** |
-| Tropical, refreshing colors | 🌊 **Neon Lagoon** |
-| Calm skies, baby blues & whites | ☁️ **Cloudwerx Lab** |
-| Retro-futuristic luxury | ⚡ **Voltage Velvet** |
-| Maximum contrast, accessibility | 🖤 **Hyper Noir Contrast** |
-| Sci-fi, Matrix aesthetic | 🌟 **Photon Storm Contrast** |
-
----
-
-## 🛠️ Compatibility
-
-✅ **VS Code:** Version 1.80.0 or higher  
-✅ **Platforms:** Windows, macOS, Linux  
-✅ **File Types:** All languages supported (TypeScript, Python, JavaScript, Rust, Go, etc.)  
-✅ **Extensions:** Works seamlessly with popular extensions  
-
----
-
-## 🤝 Contributing
-
-We love contributions! Whether it's bug reports, feature requests, or theme suggestions - your input makes these themes better for everyone.
-
-**Ways to contribute:**
-- 🐛 Report bugs or theme inconsistencies
-- 💡 Suggest new theme variants or color tweaks
-- 📸 Submit screenshots showing themes in action
-- 🌟 Share the love by starring the repo!
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
----
-
-## 📄 License
-
-This project is licensed under the **Apache License 2.0** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🌐 Connect with Pink Pixel
-
-**Website:** [pinkpixel.dev](https://pinkpixel.dev)  
-**GitHub:** [@pinkpixel-dev](https://github.com/pinkpixel-dev)  
-**Discord:** @sizzlebop  
-**Email:** admin@pinkpixel.dev  
-**Support:** [Buy me a coffee ☕](https://www.buymeacoffee.com/pinkpixel)
-
----
-
-## 💖 Acknowledgments
-
-Huge thanks to:
-- The VS Code team for an amazing editor and extension API
-- All the developers who inspire us with their colorful setups
-- Everyone who uses and shares these themes! You make coding more colorful 🌈
-
----
-
-<div align="center">
-
-### Made with ❤️ by Pink Pixel
-
-**✨ Dream it, Pixel it ✨**
-
-*Transform your code editor into a neon wonderland*
-
-</div>
+- VS Code Marketplace: https://marketplace.visualstudio.com/items?itemName=pinkpixel.pinkpixel-sweet-themes
+- GitHub: https://github.com/pinkpixel-dev/vscode-sweet-themes

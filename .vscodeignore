@@ -1,24 +1,9 @@
-# Demo and development files
-demo/
-.vscode/
-.vscode-test/
-
-# Git files
-.git/
-.gitignore
-.gitattributes
-
-# Build and dependency files
-node_modules/
-*.vsix
-
-# Documentation that's not needed in the package
+scripts/**
 OVERVIEW.md
-.editorconfig
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
+ROADMAP.md
+.gitignore
+.codex/**
+.vscode/**
+logo.png
+screenshots/**
+other/**

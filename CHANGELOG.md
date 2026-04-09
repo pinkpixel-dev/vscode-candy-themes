@@ -1,97 +1,21 @@
-# 📝 Changelog
+# Changelog
 
-All notable changes to the "Pink Pixel VSCode Candy Themes" extension will be documented in this file.
+## 1.1.1 - 2026-04-08 17:24 EDT
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+- Refreshed the repository scaffold so `README.md`, `OVERVIEW.md`, and the new `ROADMAP.md` now match the newer Pink Pixel Sweet Themes layout and tone.
+- Kept the companion cross-link between the two theme collections by adding a `Pink Pixel Sweet Themes` footer note in the Candy Themes README.
+- Standardized the packaging setup around `npm run validate` and `npm run package`, and documented that workflow for local preview and release work.
+- Tightened `.vscodeignore` so packaged VSIX artifacts exclude local workspace files, archived source material under `other/**`, the large logo, and screenshot assets.
+- Added a checked-in `.vscode/launch.json` profile for Extension Development Host previews.
+- Noted the likely source of the stale demo `tsconfig.json` noise: archived folders under `other/` rather than the active extension scaffold.
 
----
+## 1.1.0 - 2025-11-18
 
-## [1.1.0] - 2025-11-18
+- Added `Pink Pixel Cloudwerx Lab` with charcoal greys, powder blues, and crisp white accents.
+- Refreshed the earlier docs and screenshots to account for the seventh theme in the collection.
 
-### ✨ Added
-- ☁️ **Cloudwerx Lab** theme featuring charcoal greys with baby-blue and white accents for a serene cloud-lab aesthetic
-- 🖼️ Screenshot and documentation updates in `README.md` and `OVERVIEW.md` to showcase the new theme
+## 1.0.0 - 2025-11-18
 
-### 🔧 Changed
-- 📦 Bumped extension version to `1.1.0` to include the new Cloudwerx Lab experience
-
----
-
-## [1.0.0] - 2025-11-18
-
-### 🎉 Initial Release
-
-The inaugural launch of **Pink Pixel VSCode Candy Themes** - bringing neon candy vibes to your code editor!
-
-### ✨ Added
-
-#### **6 Complete Themes**
-- 🍬 **Candy Nebula** - Cosmic purple dream with candy-pink accents
-- ⚡ **Electric Sugarstorm** - High-voltage magenta and neon green energy
-- 🌊 **Neon Lagoon** - Tropical cyan paradise  
-- ⚡ **Voltage Velvet** - Luxurious purple with lime green electricity
-- 🖤 **Hyper Noir Contrast** - Pure black with maximum contrast neon accents
-- 🌟 **Photon Storm Contrast** - Bio-luminescent green and cyan sci-fi aesthetic
-
-#### **Core Features**
-- ✅ Complete VS Code UI theming (editor, sidebar, activity bar, tabs, status bar, etc.)
-- ✅ Custom terminal ANSI color palettes (16 colors per theme)
-- ✅ Syntax highlighting for all major languages
-- ✅ Markdown-optimized styling (headings, bold, italic, quotes, code blocks)
-- ✅ Chat interface theming (for AI chat features)
-- ✅ Peek view customization
-- ✅ Debug mode status bar styling
-- ✅ Input, dropdown, and menu styling
-- ✅ List and tree view theming with hover/selection states
-- ✅ Panel and panel title styling
-- ✅ Badge and button styling
-- ✅ Focus border and selection highlights
-
-#### **Accessibility**
-- ♿ High contrast theme variants (Hyper Noir Contrast, Photon Storm Contrast)
-- 🔍 Highly visible cursors across all themes
-- 📍 Clear active line highlighting
-- 🎯 Distinct active/inactive element differentiation
-
-#### **Documentation**
-- 📋 Comprehensive README with theme descriptions and installation guide
-- 📄 Detailed OVERVIEW for project architecture and design philosophy
-- 🤝 CONTRIBUTING guidelines for community involvement
-- ⚖️ Apache 2.0 LICENSE
-- 📝 This CHANGELOG for tracking changes
-
-### 🎨 Theme Design Highlights
-
-- **Semantic Color Consistency:** Functions are blue/cyan, strings are green, types are yellow, constants are pink/red
-- **Terminal Harmony:** ANSI colors complement each theme's aesthetic
-- **Complete Coverage:** Every UI element is intentionally styled
-- **Brand Alignment:** Themes reflect Pink Pixel's neon-candy, modern aesthetic
-
-### 🔧 Technical Details
-
-- **VS Code Compatibility:** Version 1.80.0 or higher
-- **Extension Type:** Pure theme extension (no runtime code)
-- **Theme Schema:** Full VSCode Color Theme schema compliance
-- **File Format:** JSON color definitions
-- **No Dependencies:** Zero runtime or development dependencies
-
----
-
-## 🔮 Future Roadmap
-
-### Planned Features (Future Releases)
-- 🌞 Light theme variants
-- 🎛️ Customizable accent colors via extension settings
-- 🖼️ Icon theme companion pack
-- 🌐 Theme preview website with live demos
-- 🎨 Additional saturation/contrast variants
-- 🤖 Theme generator for creating custom variants
-- 🔗 Integration with Pink Pixel OS for synchronized theming
-
-### Community Contributions Welcome!
-See [CONTRIBUTING.md](CONTRIBUTING.md) for ways you can help shape the future of these themes.
-
----
-
-**Made with ❤️ by Pink Pixel** ✨
+- Shipped the first public release of the Pink Pixel Candy Themes collection.
+- Added six neon candy-inspired dark themes for Visual Studio Code.
+- Styled the full workbench, syntax layers, terminal ANSI colors, Markdown surfaces, peek views, and debug chrome across the initial lineup.
