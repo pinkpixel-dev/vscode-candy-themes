@@ -8,10 +8,11 @@
   Dream it, Pixel it.
 </p>
 
-Neon candy dark themes and contrast-heavy editor looks for Visual Studio Code, designed by Pink Pixel. `Pink Pixel Candy Themes` bundles 8 polished themes that range from dreamy magenta atmospheres to stark high-contrast neon workbenches.
+Neon candy dark themes and contrast-heavy editor looks for Visual Studio Code, designed by Pink Pixel. `Pink Pixel Candy Themes` bundles 10 dark themes that range from dreamy magenta atmospheres to stark high-contrast neon workbenches.
 
 ## Included Themes
 
+- Pink Pixel Aurora Burst
 - Pink Pixel Candy Nebula
 - Pink Pixel Cloudwerx Lab
 - Pink Pixel Electric Sugarstorm
@@ -19,9 +20,14 @@ Neon candy dark themes and contrast-heavy editor looks for Visual Studio Code, d
 - Pink Pixel Neon Lagoon
 - Pink Pixel Photon Storm
 - Pink Pixel Stardust Rush
+- Pink Pixel Unicorn Sparkle
 - Pink Pixel Voltage Velvet
 
 ## Screenshots
+
+### Pink Pixel Aurora Burst
+
+![Pink Pixel Aurora Burst](https://res.cloudinary.com/dlbyddfav/image/upload/v1775783358/aurora-burst_mqmbej.png)
 
 ### Pink Pixel Candy Nebula
 
@@ -50,6 +56,10 @@ Neon candy dark themes and contrast-heavy editor looks for Visual Studio Code, d
 ### Pink Pixel Stardust Rush
 
 ![Pink Pixel Stardust Rush](https://res.cloudinary.com/dlbyddfav/image/upload/v1775708770/stardust-rush_mdqlxy.png)
+
+### Pink Pixel Unicorn Sparkle
+
+![Pink Pixel Unicorn Sparkle](https://res.cloudinary.com/dlbyddfav/image/upload/v1775783358/unicorn-sparkle_lxrlke.png)
 
 ### Pink Pixel Voltage Velvet
 

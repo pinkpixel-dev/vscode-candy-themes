@@ -2,7 +2,7 @@
   "name": "pinkpixel-vscode-candy-themes",
   "displayName": "Pink Pixel Candy Themes",
   "description": "Neon candy dark themes and contrast-heavy editor looks for Visual Studio Code by Pink Pixel.",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "publisher": "pinkpixel",
   "license": "Apache-2.0",
   "author": {
@@ -54,6 +54,11 @@
   "contributes": {
     "themes": [
       {
+        "label": "Pink Pixel Aurora Burst",
+        "uiTheme": "vs-dark",
+        "path": "./themes/aurora-burst-color-theme.json"
+      },
+      {
         "label": "Pink Pixel Candy Nebula",
         "uiTheme": "vs-dark",
         "path": "./themes/candy-nebula-color-theme.json"
@@ -87,6 +92,11 @@
         "label": "Pink Pixel Stardust Rush",
         "uiTheme": "vs-dark",
         "path": "./themes/stardust-rush-color-theme.json"
+      },
+      {
+        "label": "Pink Pixel Unicorn Sparkle",
+        "uiTheme": "vs-dark",
+        "path": "./themes/unicorn-sparkle-color-theme.json"
       },
       {
         "label": "Pink Pixel Voltage Velvet",

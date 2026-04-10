@@ -1,23 +1,27 @@
 # Changelog
 
-## 1.1.2 - 2026-04-09 12:39 EST
+## 1.1.3 - 2026, 04-09 16:57 EST
 
-- Updated screenshots and added to README.md
+- Added new `Aurora Burst` and `Unicorn Sparkle` themes.
+- Updated screenshots and added to `README.md`
+
+## 1.1.2 - 2026-04-09 00:39 EST
+
+- Updated screenshots and added to `README.md`
 - Added new `Stardust Rush` theme.
 
 ## 1.1.1 - 2026-04-08 17:24 EDT
 
-- Refreshed the repository scaffold so `README.md`, `OVERVIEW.md`, and the new `ROADMAP.md` now match the newer Pink Pixel Sweet Themes layout and tone.
+- Updated the repository `README.md` and `OVERVIEW.md`.
 - Kept the companion cross-link between the two theme collections by adding a `Pink Pixel Sweet Themes` footer note in the Candy Themes README.
 - Standardized the packaging setup around `npm run validate` and `npm run package`, and documented that workflow for local preview and release work.
-- Tightened `.vscodeignore` so packaged VSIX artifacts exclude local workspace files, archived source material under `other/**`, the large logo, and screenshot assets.
+- Updated `.vscodeignore` so packaged VSIX artifacts exclude local workspace files.
 - Added a checked-in `.vscode/launch.json` profile for Extension Development Host previews.
-- Noted the likely source of the stale demo `tsconfig.json` noise: archived folders under `other/` rather than the active extension scaffold.
 
 ## 1.1.0 - 2025-11-18
 
-- Added `Pink Pixel Cloudwerx Lab` with charcoal greys, powder blues, and crisp white accents.
-- Refreshed the earlier docs and screenshots to account for the seventh theme in the collection.
+- Added `Cloudwerx Lab` theme.
+- Updated screenshots and added to `README.md`
 
 ## 1.0.0 - 2025-11-18
 
